@@ -1,0 +1,22 @@
+1) install dialogflow and uuid
+  - npm i dialogflow
+  - npm i uuid
+  
+2) Get the Credentials for your dialogflow project
+  step 1 : Go to your dialogflow account
+  step 2 : Click on dialogflow setting ( Upper left gear icon)
+  step 3 : Where you can see Project ID and Service Account
+  step 4 : Click on Service Account and it will navigate to you on other screen Create service account using the top-center + icon
+  step 5 : Then Create Key for your service account using 3 vertical dot
+  step 6 : download json file and store on your computer
+  
+  
+3) Give the path to your SessionClient
+  
+  const sessionClient = new dialogflow.SessionsClient({
+       keyFilename: "/var/www/html/moqatrips/dialog-flow.json"
+  });
+  
+  
+
+  
